@@ -37,6 +37,9 @@ jobs:
       - name: Build Next.js
         run: bun run build
 
+      - name: Fix asset paths for GitHub Pages
+        run: node scripts/fix-paths.mjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
