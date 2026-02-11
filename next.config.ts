@@ -8,7 +8,8 @@ const bundleAnalyzer = withBundleAnalyzer({
 const nextConfig: NextConfig = {
   // 静的書き出しを有効化
   output: "export",
-  basePath: "",
+  basePath: "/bar-shinobu",
+  assetPrefix: "/bar-shinobu/",
   trailingSlash: true,
   reactCompiler: true,
   images: {
