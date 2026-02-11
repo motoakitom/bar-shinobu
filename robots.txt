@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://bar-shinobu.web.app
+Sitemap: https://bar-shinobu.web.app/sitemap.xml
