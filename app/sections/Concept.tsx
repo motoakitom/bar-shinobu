@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import { useRef } from "react";
 
 export default function Concept() {
@@ -18,12 +17,10 @@ export default function Concept() {
             {/* Parallax Background */}
             <div className="absolute inset-0 z-0">
                 <motion.div style={{ y }} className="relative w-full h-[120%] -top-[10%]">
-                    <Image
+                    <img
                         src="/images/billboard.webp"
                         alt="Bar Concept"
-                        fill
-                        className="object-cover opacity-40"
-                        sizes="100vw"
+                        className="absolute inset-0 w-full h-full object-cover opacity-40"
                     />
                     <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
                 </motion.div>

@@ -2,19 +2,16 @@
 
 import { motion } from "framer-motion";
 import { MapPin, Clock, Phone } from "lucide-react";
-import Image from "next/image";
 
 export default function Access() {
     return (
         <section id="access" className="py-24 relative overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-                <Image
+                <img
                     src="/images/building.webp"
                     alt="Building Exterior"
-                    fill
-                    className="object-cover opacity-30"
-                    sizes="100vw"
+                    className="absolute inset-0 w-full h-full object-cover opacity-30"
                 />
                 <div className="absolute inset-0 bg-black/70" />
             </div>

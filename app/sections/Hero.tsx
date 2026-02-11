@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import { useRef } from "react";
 import SparkleText from "../components/SparkleText";
 
@@ -22,13 +21,10 @@ export default function Hero() {
                 style={{ y, opacity }}
                 className="absolute inset-0 z-0"
             >
-                <Image
+                <img
                     src="/hero.png"
                     alt="BAR SHINOBU Interior"
-                    fill
-                    className="object-cover opacity-60"
-                    priority
-                    sizes="100vw"
+                    className="absolute inset-0 w-full h-full object-cover opacity-60"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/90" />
             </motion.div>
@@ -81,13 +77,10 @@ export default function Hero() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
                         >
-                            <Image
+                            <img
                                 src="/shinobu_logo.svg"
                                 alt="BAR SHINOBU Logo"
-                                width={300}
-                                height={300}
                                 className="w-56 h-56 md:w-80 md:h-80 object-contain invert brightness-0"
-                                priority
                             />
                         </motion.div>
                     </div>

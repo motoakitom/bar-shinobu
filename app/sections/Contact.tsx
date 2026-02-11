@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
-import Image from "next/image";
 import TermsContent from "@/app/components/TermsContent";
 
 export default function Contact() {
@@ -48,12 +47,10 @@ export default function Contact() {
         <section id="contact" className="py-32 relative overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-                <Image
+                <img
                     src="/images/lump.webp"
                     alt="Contact Background"
-                    fill
-                    className="object-cover opacity-25"
-                    sizes="100vw"
+                    className="absolute inset-0 w-full h-full object-cover opacity-25"
                 />
                 <div className="absolute inset-0 bg-black/80" />
             </div>

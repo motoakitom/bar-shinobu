@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -36,13 +35,10 @@ export default function Header() {
             >
                 <div className="container flex items-center justify-between">
                 <Link href="/" className="z-50">
-                    <Image
+                    <img
                         src="/shinobu_logo.svg"
                         alt="BAR SHINOBU Logo"
-                        width={120}
-                        height={120}
                         className="w-8 h-8 md:w-10 md:h-10 object-contain invert brightness-0"
-                        priority
                     />
                 </Link>
 
