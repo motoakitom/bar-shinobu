@@ -51,8 +51,17 @@ async function* walkDir(dir) {
     const path = join(dir, file);
     const stats = await stat(path);
     if (stats.isDirectory()) {
-      // _next/static/chunks 内のJSファイルも対象にする
-      if (file !== "_next" || dir.includes("_next/static")) {
+      // _next/static 内のJSファイルも対象にする
+      if (file === "_next") {
+        // ルートの_nextの場合、staticサブディレクトリのみ処理
+        if (dir === OUT_DIR) {
+          try {
+            yield* walkDir(join(path, "static"));
+          } catch (e) {
+            // staticディレクトリがない場合は無視
+          }
+        }
+      } else {
         yield* walkDir(path);
       }
     } else if (file.endsWith(".html") || file.endsWith(".js")) {
