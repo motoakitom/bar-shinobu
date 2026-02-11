@@ -9,7 +9,7 @@ export default function Access() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/images/building.webp"
+                    src="/bar-shinobu/images/building.webp"
                     alt="Building Exterior"
                     className="absolute inset-0 w-full h-full object-cover opacity-30"
                 />

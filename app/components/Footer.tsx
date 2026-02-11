@@ -7,11 +7,11 @@ export default function Footer() {
         <footer className="bg-black py-12 border-t border-white/10 relative">
             <div
                 className="absolute inset-0 bg-center"
-                style={{ backgroundImage: 'url(/images/wall.webp)', backgroundSize: '150%', opacity: 0.15 }}
+                style={{ backgroundImage: 'url(/bar-shinobu/images/wall.webp)', backgroundSize: '150%', opacity: 0.15 }}
             />
             <div className="container flex flex-col items-center justify-center gap-6 relative z-10">
                 <Image
-                    src="/shinobu_logo.svg"
+                    src="/bar-shinobu/shinobu_logo.svg"
                     alt="BAR SHINOBU Logo"
                     width={120}
                     height={120}

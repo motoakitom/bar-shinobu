@@ -22,7 +22,7 @@ export default function Hero() {
                 className="absolute inset-0 z-0"
             >
                 <img
-                    src="/hero.png"
+                    src="/bar-shinobu/hero.png"
                     alt="BAR SHINOBU Interior"
                     className="absolute inset-0 w-full h-full object-cover opacity-60"
                 />
@@ -78,7 +78,7 @@ export default function Hero() {
                             transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
                         >
                             <img
-                                src="/shinobu_logo.svg"
+                                src="/bar-shinobu/shinobu_logo.svg"
                                 alt="BAR SHINOBU Logo"
                                 className="w-56 h-56 md:w-80 md:h-80 object-contain invert brightness-0"
                             />

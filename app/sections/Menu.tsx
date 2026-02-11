@@ -31,7 +31,7 @@ export default function Menu() {
         <section id="menu" className="py-32 bg-[#080808] relative">
             <div
                 className="absolute inset-0 opacity-10 bg-cover bg-center"
-                style={{ backgroundImage: 'url(/images/bottles.webp)' }}
+                style={{ backgroundImage: 'url(/bar-shinobu/images/bottles.webp)' }}
             />
             <div className="container relative z-10">
                 <div className="flex flex-col md:flex-row gap-16 md:gap-24">
@@ -122,7 +122,7 @@ export default function Menu() {
                     className="text-center mt-16"
                 >
                     <a
-                        href="/menu.pdf"
+                        href="/bar-shinobu/menu.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group inline-flex items-center gap-2 text-white border-b border-accent/50 pb-1 hover:text-accent transition-colors"

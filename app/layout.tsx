@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-        <link rel="preload" as="image" href="/hero.png" />
+        <link rel="preload" as="image" href="/bar-shinobu/hero.png" />
       </head>
       <body>
         <SmoothScroll>

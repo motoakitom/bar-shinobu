@@ -36,7 +36,7 @@ export default function Header() {
                 <div className="container flex items-center justify-between">
                 <Link href="/" className="z-50">
                     <img
-                        src="/shinobu_logo.svg"
+                        src="/bar-shinobu/shinobu_logo.svg"
                         alt="BAR SHINOBU Logo"
                         className="w-8 h-8 md:w-10 md:h-10 object-contain invert brightness-0"
                     />

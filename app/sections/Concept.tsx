@@ -18,7 +18,7 @@ export default function Concept() {
             <div className="absolute inset-0 z-0">
                 <motion.div style={{ y }} className="relative w-full h-[120%] -top-[10%]">
                     <img
-                        src="/images/billboard.webp"
+                        src="/bar-shinobu/images/billboard.webp"
                         alt="Bar Concept"
                         className="absolute inset-0 w-full h-full object-cover opacity-40"
                     />

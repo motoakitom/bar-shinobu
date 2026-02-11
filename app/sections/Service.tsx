@@ -9,21 +9,21 @@ const services = [
         title: "Luxury Space",
         jpTitle: "上質な空間",
         desc: "洗練されたインテリアと照明が織りなす、大人のためのプライベート空間。",
-        bgImage: "/images/room.webp",
+        bgImage: "/bar-shinobu/images/room.webp",
     },
     {
         icon: <Users size={32} />,
         title: "Hospitality",
         jpTitle: "丁寧な接客",
         desc: "女性スタッフによるきめ細やかなおもてなしで、至福のひとときを。",
-        bgImage: "/images/staff.webp",
+        bgImage: "/bar-shinobu/images/staff.webp",
     },
     {
         icon: <Crown size={32} />,
         title: "VIP Plans",
         jpTitle: "VIP待遇",
         desc: "会員様限定の特別なプランや、希少なウイスキーをご用意しております。",
-        bgImage: "/images/services.webp",
+        bgImage: "/bar-shinobu/images/services.webp",
     },
 ];
 

@@ -48,7 +48,7 @@ export default function Contact() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/images/lump.webp"
+                    src="/bar-shinobu/images/lump.webp"
                     alt="Contact Background"
                     className="absolute inset-0 w-full h-full object-cover opacity-25"
                 />
