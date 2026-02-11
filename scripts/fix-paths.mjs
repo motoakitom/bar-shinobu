@@ -26,7 +26,9 @@ const PATH_PATTERNS = [
   // 背景画像 (CSS inline style)
   { from: /background-image:url\(\/images\//g, to: `background-image:url(${BASE_PATH}/images/` },
   { from: /background-image:url\(\/hero\./g, to: `background-image:url(${BASE_PATH}/hero.` },
-  // Preload
+  // Preload images (href="/images/...")
+  { from: /href="\/images\//g, to: `href="${BASE_PATH}/images/` },
+  // Preload hero/shinobu_logo
   { from: /href="\/(hero\.(png|webp)|shinobu_logo\.svg)"/g, to: `href="${BASE_PATH}/$1"` },
   // Favicon webp (href)
   { from: /href="\/logo-favicon\.webp"/g, to: `href="${BASE_PATH}/logo-favicon.webp"` },
