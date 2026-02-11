@@ -5,18 +5,11 @@ const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 
-const ghpBasePath = process.env.GHP_BASE_PATH;
-
 const nextConfig: NextConfig = {
   // 静的書き出しを有効化
   output: "export",
-  ...(ghpBasePath
-    ? {
-        basePath: ghpBasePath,
-        assetPrefix: `${ghpBasePath}/`,
-        trailingSlash: true,
-      }
-    : {}),
+  basePath: "",
+  trailingSlash: true,
   reactCompiler: true,
   images: {
     formats: ["image/webp", "image/avif"],
