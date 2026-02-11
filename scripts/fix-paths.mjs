@@ -32,6 +32,11 @@ const PATH_PATTERNS = [
   { from: /href="\/(hero\.(png|webp)|shinobu_logo\.svg)"/g, to: `href="${BASE_PATH}/$1"` },
   // Favicon webp (href)
   { from: /href="\/logo-favicon\.webp"/g, to: `href="${BASE_PATH}/logo-favicon.webp"` },
+  // Meta icons (without basePath)
+  { from: /"href":"\/shinobu_logo\.svg"/g, to: `"href":"${BASE_PATH}/shinobu_logo.svg"` },
+  { from: /"href":"\/logo-favicon\.webp"/g, to: `"href":"${BASE_PATH}/logo-favicon.webp"` },
+  { from: /"href":"\/hero\.png"/g, to: `"href":"${BASE_PATH}/hero.png"` },
+  { from: /"href":"\/images\//g, to: `"href":"${BASE_PATH}/images/` },
   // Internal page links
   { from: /href="\/privacy"/g, to: `href="${BASE_PATH}/privacy/` },
   { from: /href="\/terms"/g, to: `href="${BASE_PATH}/terms/` },
@@ -46,10 +51,11 @@ async function* walkDir(dir) {
     const path = join(dir, file);
     const stats = await stat(path);
     if (stats.isDirectory()) {
-      if (file !== "_next") {
+      // _next/static/chunks 内のJSファイルも対象にする
+      if (file !== "_next" || dir.includes("_next/static")) {
         yield* walkDir(path);
       }
-    } else if (file.endsWith(".html")) {
+    } else if (file.endsWith(".html") || file.endsWith(".js")) {
       yield path;
     }
   }
